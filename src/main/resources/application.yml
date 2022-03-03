@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: connect-multiple-dbs
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  bumblebee-datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: test
+    password: test
+    url: jdbc:mysql://localhost:3306/bumblebee?createDatabaseIfNotExist=true
+
+  arcticfox-datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: test
+    password: test
+    url: jdbc:mysql://localhost:3306/arcticfox
+
+server:
+  port: 9191
+  servlet:
+    context-path: /medical
