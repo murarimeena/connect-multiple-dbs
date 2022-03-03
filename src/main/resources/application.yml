@@ -15,7 +15,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: test
     password: test
-    url: jdbc:mysql://localhost:3306/arcticfox
+    url: jdbc:mysql://localhost:3306/arcticfox?createDatabaseIfNotExist=true
 
 server:
   port: 9191

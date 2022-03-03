@@ -43,7 +43,7 @@ public class ClinicDataSourceConfiguration {
     @Primary
     LocalContainerEntityManagerFactoryBean clinicEntityManagerFactory(
             @Qualifier("clinicsDataSource") DataSource clinicsDatasource, EntityManagerFactoryBuilder builder) {
-        return builder.dataSource(clinicsDatasource).packages(Clinic.class).build();
+        return builder.dataSource(clinicsDatasource).packages("io.muai.mdb.model.clinic").build();
     }
 
     @Bean

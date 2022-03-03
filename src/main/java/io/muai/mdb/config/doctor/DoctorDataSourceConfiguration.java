@@ -39,7 +39,7 @@ public class DoctorDataSourceConfiguration {
     @Bean
     LocalContainerEntityManagerFactoryBean doctorEntityManagerFactory(
             @Qualifier("doctorsDatasource") DataSource doctorsDatasource, EntityManagerFactoryBuilder builder) {
-        return builder.dataSource(doctorsDatasource).packages(Doctor.class).build();
+        return builder.dataSource(doctorsDatasource).packages("io.muai.mdb.model.doctor").build();
     }
 
     @Bean
