@@ -1,8 +1,9 @@
-package io.muai.mdb.service;
+package io.muai.mdb.service.impl;
 
 import io.muai.mdb.model.clinic.Ambulance;
 import io.muai.mdb.model.request.AmbulanceRequest;
 import io.muai.mdb.repos.clinic.AmbulanceRepository;
+import io.muai.mdb.service.AmbulanceService;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
