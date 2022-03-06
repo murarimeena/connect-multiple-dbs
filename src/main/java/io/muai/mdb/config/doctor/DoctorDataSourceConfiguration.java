@@ -1,7 +1,5 @@
 package io.muai.mdb.config.doctor;
 
-
-import io.muai.mdb.model.doctor.Doctor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;

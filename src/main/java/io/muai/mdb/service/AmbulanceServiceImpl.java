@@ -5,10 +5,13 @@ import io.muai.mdb.model.request.AmbulanceRequest;
 import io.muai.mdb.repos.clinic.AmbulanceRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 @Slf4j
@@ -35,17 +38,17 @@ public class AmbulanceServiceImpl implements AmbulanceService {
         return new ResponseEntity<>(resp, HttpStatus.OK);
     }
 
-//    @Override
-//    public ResponseEntity<List<AmbulanceRequest>> findAll() {
-//        List<Ambulance> ambulanceList = repo.findAll();
-//
-//        List<AmbulanceRequest> resp = new ArrayList<>();
-//        Type type = new TypeToken<List<AmbulanceRequest>>() {
-//        }.getType();
-//        ModelMapper modelMapper = new ModelMapper();
-//        modelMapper.map(ambulanceList, new TypeToken<List<AmbulanceRequest>>() {
-//        }.getType());
-//
-//        return resp;
-//    }
+    @Override
+    public ResponseEntity<List<AmbulanceRequest>> findAll() {
+        List<Ambulance> ambulanceList = repo.findAll();
+
+        ModelMapper modelMapper = new ModelMapper();
+
+        List<AmbulanceRequest> list =
+                modelMapper.map(ambulanceList,
+                        new TypeToken<List<AmbulanceRequest>>() {
+                        }.getType());
+
+        return new ResponseEntity<>(list, HttpStatus.OK);
+    }
 }
