@@ -18,6 +18,9 @@ spring:
     url: jdbc:mysql://localhost:3306/arcticfox?createDatabaseIfNotExist=true
 
 server:
-  port: 9191
+  port: 9192
   servlet:
     context-path: /medical
+
+con:
+  base-uri: localhost:9192

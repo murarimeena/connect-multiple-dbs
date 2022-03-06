@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ConnectMultipleDbsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ConnectMultipleDbsApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ConnectMultipleDbsApplication.class, args);
+    }
 
 }
