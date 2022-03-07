@@ -1,6 +1,6 @@
 package io.muai.mdb.controller.ambulance;
 
-import io.muai.mdb.model.request.AmbulanceRequest;
+import io.muai.mdb.payload.AmbulanceRequest;
 import io.muai.mdb.service.AmbulanceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

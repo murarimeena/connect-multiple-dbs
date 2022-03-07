@@ -1,6 +1,6 @@
 package io.muai.mdb.service;
 
-import io.muai.mdb.model.request.DoctorRequest;
+import io.muai.mdb.payload.DoctorRequest;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;

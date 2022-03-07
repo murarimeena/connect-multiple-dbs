@@ -1,6 +1,6 @@
 package io.muai.mdb.controller.clinic;
 
-import io.muai.mdb.model.request.ClinicRequest;
+import io.muai.mdb.payload.ClinicRequest;
 import io.muai.mdb.service.ClinicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

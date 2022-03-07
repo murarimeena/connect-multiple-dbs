@@ -1,4 +1,4 @@
-package io.muai.mdb.model.request;
+package io.muai.mdb.payload;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

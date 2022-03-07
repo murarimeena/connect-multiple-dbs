@@ -1,7 +1,7 @@
 package io.muai.mdb.service.impl;
 
 import io.muai.mdb.model.doctor.Doctor;
-import io.muai.mdb.model.request.DoctorRequest;
+import io.muai.mdb.payload.DoctorRequest;
 import io.muai.mdb.repos.doctor.DoctorRepository;
 import io.muai.mdb.service.DoctorService;
 import lombok.extern.slf4j.Slf4j;

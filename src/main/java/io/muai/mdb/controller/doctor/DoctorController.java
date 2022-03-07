@@ -1,7 +1,7 @@
 package io.muai.mdb.controller.doctor;
 
 
-import io.muai.mdb.model.request.DoctorRequest;
+import io.muai.mdb.payload.DoctorRequest;
 import io.muai.mdb.service.DoctorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

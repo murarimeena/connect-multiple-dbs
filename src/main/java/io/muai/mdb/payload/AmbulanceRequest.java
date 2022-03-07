@@ -1,4 +1,4 @@
-package io.muai.mdb.model.request;
+package io.muai.mdb.payload;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ClinicRequest {
-    private String name;
+public class AmbulanceRequest {
+    private String aName;
     private String city;
-    private String streetAddress;
+    private String route;
 }
